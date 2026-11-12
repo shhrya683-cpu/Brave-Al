@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08090d">
+<title>BRAVE AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="logo">B</div>
+    <div>
+      <h2>BRAVE <span>AI</span></h2>
+      <small>YOUR INTELLIGENT ASSISTANT</small>
+    </div>
+  </div>
+
+  <button class="new-chat" id="newChat">＋ محادثة جديدة</button>
+  <h4>المحادثات</h4>
+  <div id="history"></div>
+</aside>
+
+<main class="main">
+<header>
+  <button id="menuBtn">☰</button>
+  <strong>♛ BRAVE AI</strong>
+  <button id="clearChat">مسح المحادثة</button>
+</header>
+
+<section class="chat-area">
+  <div class="welcome" id="welcome">
+    <div class="crown">♛</div>
+    <small>WELCOME TO BRAVE AI</small>
+    <h1>مرحباً بك في <span>BRAVE AI</span></h1>
+    <p>اسأل وتعلّم وابتكر، مساعدك الذكي في خدمتك.</p>
+
+    <div class="suggestions">
+      <button data-prompt="اشرح لي الذكاء الاصطناعي">اشرح لي مفهوماً</button>
+      <button data-prompt="ساعدني في كتابة كود احترافي">كتابة الأكواد</button>
+      <button data-prompt="اختبرني في اللغة الإنجليزية">اختبر معلوماتي</button>
+      <button data-prompt="اقترح لي فكرة مشروع جديدة">أفكار إبداعية</button>
+    </div>
+  </div>
+
+  <div id="messages"></div>
+</section>
+
+<footer>
+  <div class="composer">
+    <textarea id="prompt" placeholder="اكتب رسالتك إلى BRAVE AI..." rows="1"></textarea>
+    <button id="sendBtn">➤</button>
+  </div>
+  <small>قد يخطئ BRAVE AI أحياناً، تحقق من المعلومات المهمة.</small>
+</footer>
+</main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
